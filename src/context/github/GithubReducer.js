@@ -4,6 +4,7 @@ const githubReducer = (state, action) => {
       return {
         ...state,
         users: action.payload,
+        loading: false,
       };
     default:
       return state;
