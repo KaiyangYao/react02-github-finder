@@ -11,6 +11,12 @@ const githubReducer = (state, action) => {
         users: action.payload,
         loading: false,
       };
+    case "GET_USER": // search for a single user profile
+      return {
+        ...state,
+        user: action.payload,
+        loading: false,
+      };
     case "CLEAR_USERS":
       return {
         ...state,
